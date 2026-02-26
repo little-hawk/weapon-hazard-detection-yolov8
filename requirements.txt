@@ -1,0 +1,8 @@
+ultralytics
+timm
+torch
+torchvision
+opencv-python
+pandas
+matplotlib
+pyyaml
