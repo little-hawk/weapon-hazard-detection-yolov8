@@ -1,0 +1,8 @@
+train: dataset_splitted/images/train
+val: dataset_splitted/images/val
+test: dataset_splitted/images/test
+
+nc: 2
+names:
+  0: knife
+  1: gun

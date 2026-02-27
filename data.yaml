@@ -1,8 +1,0 @@
-path: C:\Users\zhyld\OneDrive - Murdoch University\Documents\GitHub\weapon-hazard-detection-yolov8\dataset_splitted
-train: images/train
-val: images/val
-test: images/test
-nc: 2
-names:
-  0: knife
-  1: gun

@@ -3,7 +3,7 @@ import random, shutil, yaml, os, stat
 
 # ── CONFIG ────────────────────────────────────────────────────────
 SRC = Path("dataset")               # READ-ONLY source
-OUT = Path("dataset_splitted")      # NEW dataset with fresh splits
+OUT = Path("weapon_training/dataset_splitted")      # NEW dataset with fresh splits
 
 TRAIN_RATIO = 0.70
 VAL_RATIO   = 0.10
