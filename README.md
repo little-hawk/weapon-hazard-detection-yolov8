@@ -1,7 +1,6 @@
-Markdown
 # Weapon Hazard Detection Dashboard (YOLOv8 + Streamlit)
 
-This project implements a **weapon hazard detection system** using a trained **YOLOv8 object detection model** and an interactive **Streamlit dashboard**.
+This project implements a **weapon hazard detection system (knife and gun)** using a trained **YOLOv8 object detection model** and an interactive **Streamlit dashboard**. 
 
 The system is designed for **demonstration, evaluation, and inference**, allowing users to:
 * Evaluate a trained model on a **test dataset**
@@ -11,6 +10,7 @@ The system is designed for **demonstration, evaluation, and inference**, allowin
 
 Large artifacts (datasets, training outputs, virtual environments) are intentionally excluded from the repository to keep it portable and compliant with GitHub size limits.
 
+You can find the model training ipynb file in weapon_detection/model_train_colab.ipynb
 ---
 
 ## 1. Features
@@ -49,15 +49,16 @@ weapon-hazard-detection-yolov8/
 ├── requirements.txt                 # Python dependencies
 ├── .gitignore                       # Excludes venv, datasets, runs
 └── README.md
-3. System Requirements
+```
+## 3. System Requirements
 Python: 3.9 – 3.11 (recommended)
 
 Git
 
 Internet Connection: Required for initial dependency installation
 
-4. Environment Setup
-4.1 Create a Virtual Environment
+## 4. Environment Setup
+### 4.1 Create a Virtual Environment
 Windows (PowerShell):
 
 PowerShell
@@ -74,21 +75,21 @@ With the virtual environment activated:
 
 Bash
 pip install -r requirements.txt
-5. Model Weights
+## 5. Model Weights
 Due to GitHub file size limits, trained model weights (.pt files) are not guaranteed to be in the repository. The dashboard supports two methods:
 
 Option A (Recommended): Start the dashboard and use the sidebar to upload your best.pt file directly.
 
 Option B (Local): Place your weights in weapon_detection/weights/best.pt. The dashboard detects .pt files in that directory automatically.
 
-6. Running the Application
+## 6. Running the Application
 Always use the module form to run the application to avoid PATH issues:
 
 Bash
 python -m streamlit run weapon_detection/app.py
 The dashboard will open in your default browser at: http://localhost:8501
 
-7. Dataset Configuration (YOLO Format)
+## 7. Dataset Configuration (YOLO Format)
 The system uses a standard YOLO dataset layout.
 
 Example Directory Structure:
