@@ -1,34 +1,41 @@
+# --------------------
 # Python
+# --------------------
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Virtual environments
+# --------------------
+# Virtual environments (DO NOT COMMIT)
+# --------------------
 .venv/
 venv/
 env/
 
+# --------------------
 # Jupyter / Colab
+# --------------------
 .ipynb_checkpoints/
 
-# OS
+# --------------------
+# OS files
+# --------------------
 .DS_Store
 Thumbs.db
 
-# Ultralytics / YOLO runs & caches
+# --------------------
+# Ultralytics / YOLO generated files
+# --------------------
 runs/
 **/runs/
 *.onnx
 *.engine
 
-# Large archives / exports
+# --------------------
+# Large archives (DO NOT COMMIT)
+# --------------------
 *.zip
 *.tar
 *.tar.gz
 *.7z
-
-# Local datasets (keep config, not data)
-datasets/
-dataset_splitted/
-**/dataset_splitted/
